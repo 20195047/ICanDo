@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.icando">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ICanDo">
+        <activity android:name=".hrdspll"></activity>
+        <activity android:name=".nrmlspll" />
+        <activity android:name=".spell_menu" />
+        <activity android:name=".spelling" />
+        <activity android:name=".hrdquiz" />
+        <activity android:name=".nrmlquiz" />
+        <activity android:name=".quiz_menu" />
+        <activity android:name=".score" />
+        <activity android:name=".funquiz" />
+        <activity android:name=".animals" />
+        <activity android:name=".reading" />
+        <activity android:name=".writing" />
+        <activity android:name=".Menu">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

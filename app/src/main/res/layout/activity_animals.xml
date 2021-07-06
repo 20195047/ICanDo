@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".animals">
+
+
+
+        <ViewFlipper
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/viewFlipper">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/cat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/cat" />
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/chicken"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/chicken"/>
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/cow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:src="@drawable/cow"/>
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/dog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/dog"
+                android:background="@color/white"/>
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/elephant"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/elephant"
+                android:background="@color/white"/>
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/frog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/frog"
+                android:background="@color/white"/>
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/goat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/goat"
+                android:background="@color/white"/>
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/horse"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/horse"
+                android:background="@color/white"/>
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/tiger"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/tiger"
+                android:background="@color/darkgrey"/>
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/zebra"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/zebra"
+                android:background="@color/white"/>
+
+        </ViewFlipper>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <Button
+        android:id="@+id/nxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        android:padding="0dp"
+        android:text="Next"
+        android:enabled="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.972" />
+
+    <Button
+        android:id="@+id/prv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="40dp"
+        android:padding="0dp"
+        android:text="Previous"
+        android:enabled="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.973" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
